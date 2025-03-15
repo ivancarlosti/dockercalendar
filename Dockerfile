@@ -69,7 +69,7 @@ FROM node:18 as runner
 
 WORKDIR /calcom
 COPY --from=builder-two /calcom ./
-ARG NEXT_PUBLIC_WEBAPP_URL=http://localhost:3000
+ARG NEXT_PUBLIC_WEBAPP_URL=https://agenda.icc.gg
 ENV NEXT_PUBLIC_WEBAPP_URL=$NEXT_PUBLIC_WEBAPP_URL \
     BUILT_NEXT_PUBLIC_WEBAPP_URL=$NEXT_PUBLIC_WEBAPP_URL
 
